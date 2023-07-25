@@ -1,11 +1,11 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
-# from django_app1.models import Post
-#
-#
-# # Create your views here.
-#
-# def name_view(request):
-#     p= Post.objects.all()
-#     return render(request, "index.html", {"data":p})
-#
+from django_app1.models import Post
+
+
+# Create your views here.
+
+def home(request):
+    p = 10 / 0
+    return HttpResponse("Hello")
